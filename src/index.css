@@ -1,0 +1,4156 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@300;500;700&display=swap'); */
+
+
+/* ===================================================================================================================================================================
+
+                                                 FOOTER
+
+=================================================================================================================================================================== */
+/* CSS untuk Footer */
+.footer {
+  background: linear-gradient(135deg, #76b176, #696867e8);
+  padding: 40px 0; /* Padding atas dan bawah */
+  font-family: Arial, sans-serif; /* Font footer */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  width: 30vw;
+  padding: 0 15px;
+}
+
+.footer-left h3,
+.footer-middle h4,
+.footer-right h4 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #f8f7f7;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-left p {
+  color: #f7f4f4;
+  font-size: 26px;
+  line-height: 1.5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social-icons a {
+  font-size: 44px;
+  margin-right: 95px;
+  color: #faf5f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff0040; /* Warna saat hover */
+}
+
+.footer-middle ul,
+.footer-right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+  font-size: 26px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #f5f2f2;
+  margin-bottom: 10px;
+}
+
+.footer-middle ul li a,
+.footer-right ul li a {
+  text-decoration: none;
+  color: #fffcfc;
+  transition: color 0.3s ease;
+}
+
+.footer-middle ul li a:hover,
+.footer-right ul li a:hover {
+  color: #0f0f0f;
+}
+
+.footer-right ul li {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    margin-bottom: 20px;
+  }
+
+  .footer-left h3,
+  .footer-middle h4,
+  .footer-right h4 {
+    font-size: 20px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                                          responsive footer
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* ===================================================================================================================================================================
+
+                                                 HEADER
+
+=================================================================================================================================================================== */
+/* Global Styles */
+/* body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+} */
+
+/* body.dark-mode {
+  background-color: #121212;
+} */
+
+/* Global Styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* .main-header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+} */
+
+.main-header.dark-mode {
+  background-color: #2c2c2c;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.header-logo .logo-image {
+  max-height: 50px;
+}
+
+.header-main-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-main-icons a {
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.header-main-icons a:hover {
+  color: #007bff;
+}
+
+.header-main-icons a.dark-mode {
+  color: #ffffff;
+}
+
+.header-right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.action-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.icon-container .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.theme-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  color: #007bff;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .main-header {
+  background-color: #2c2c2c;
+}
+
+body.dark-mode .header-main-icons a,
+body.dark-mode .theme-toggle-button {
+  color: #ffffff;
+}
+
+body.dark-mode .header-main-icons a:hover,
+body.dark-mode .theme-toggle-button:hover {
+  color: #007bff;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .header-main-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  .header-right-section a {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-main-icons a {
+    width: 50px;
+    height: 50px;
+  }
+  .header-right-section a {
+    width: 50px;
+    height: 50px;
+  }
+}
+ /* /* ===========================================================================================================================================================
+                                                trect ur order header
+===========================================================================================================================================================
+ */
+
+ .btn-history {
+  padding: 15px 30px; /* Membuat tombol lebih besar dengan padding */
+  background: linear-gradient(135deg, #60947c, #121312); /* Gradasi hijau aesthetic */
+  color: #fff; /* Warna teks putih */
+  font-size: 18px; /* Ukuran font lebih besar untuk keterbacaan */
+  border: none; /* Menghapus border default */
+  border-radius: 8px; /* Menambahkan border radius untuk sudut lebih halus */
+  cursor: pointer; /* Menambahkan kursor pointer saat hover */
+  transition: background-color 0.3s ease; /* Efek transisi saat hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus di bawah tombol */
+}
+
+.btn-history:hover {
+  background: linear-gradient(135deg, #74af68, #121312); /* Gradasi hijau aesthetic */
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                      responsive trect your order
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* Hero Section */
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Track Order Container */
+.track-order-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.track-order-page {
+  margin-top: auto;
+  width: 100%;
+  max-width: 1500px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(153, 238, 160, 0.8) 100%);  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.track-order-page h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.track-order-page p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.partnership-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.partnership-info p {
+  margin-bottom: 15px;
+}
+
+.pos-logo {
+  max-width: 100%;
+  margin: 10px;
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  /* width: 100%; */
+  padding: 12px;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #60947c, #121312);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #74af68, #121312);
+}
+
+/* Error and Status Messages */
+p {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+}
+
+.status-message {
+  color: green;
+}
+
+.tracking-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1480px) {
+  .track-order-page {
+    padding: 15px;
+  }
+
+  .track-order-page h1 {
+    font-size: 1.8rem;
+  }
+  .track-order-page p {
+    font-size: 1.4rem;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+  .track-order-page .pos-logo {
+    width: 50%;  /* Mengatur ukuran gambar menjadi 80% dari lebar kontainer */
+  }
+  
+  .track-order-page .store-logo {
+    width: 50%;  /* Mengatur ukuran logo store menjadi 70% dari lebar kontainer */
+  }
+
+}
+
+@media screen and (max-width: 1460px) {
+  .track-order-page {
+    padding: 15px;
+  }
+
+  .track-order-page h1 {
+    font-size: 2rem;
+  }
+  .track-order-page p {
+    font-size: 1.6rem;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+  .track-order-page .pos-logo {
+    width: 30%;  /* Mengatur ukuran gambar menjadi 80% dari lebar kontainer */
+  }
+  
+  .track-order-page .store-logo {
+    width: 30%;  /* Mengatur ukuran logo store menjadi 70% dari lebar kontainer */
+  }
+
+}
+@media screen and (max-width: 790px) {
+  .track-order-page {
+    padding: 15px;
+  }
+
+  .track-order-page h1 {
+    font-size: 2.4rem;
+  }
+  .track-order-page p {
+    font-size: 1.9rem;
+  }
+
+  input {
+    font-size: 1.3rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+  .track-order-page .pos-logo {
+    width: 20%;  /* Mengatur ukuran gambar menjadi 80% dari lebar kontainer */
+  }
+  
+  .track-order-page .store-logo {
+    width: 20%;  /* Mengatur ukuran logo store menjadi 70% dari lebar kontainer */
+  }
+
+}
+
+
+/* Mobile Screens (Max 768px) */
+@media screen and (max-width: 768px) {
+  .track-order-page {
+    padding: 15px;
+  }
+
+  .track-order-page h1 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+/* Smaller Mobile Screens (Max 480px) */
+@media screen and (max-width: 480px) {
+  .track-order-page h1 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .pos-logo {
+    max-width: 80px;
+  }
+}
+
+/* ===================================================================================================================================================================
+
+                                                 ABOUT
+
+=================================================================================================================================================================== */
+/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Global styling */
+body {
+    font-family: 'Inter', sans-serif; /* Font modern untuk teks utama */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f9f9, #e8e8e8);
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Container utama */
+.container-page {
+  margin-top: 150px;
+    padding: 40px 20px;
+    max-width: 1900px;
+    margin: 40px auto;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animasi untuk kontainer */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About Content */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    flex: 1;
+    color: #0f0f0f;
+}
+
+.about-text h1,
+.about-text h2 {
+    font-family: 'Playfair Display', serif; /* Font klasik untuk judul */
+    font-weight: 700;
+    font-size: 5.5rem;
+    color: #0f0f0f; /* Warna biru gelap aesthetic */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+.about-text p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 15px 0;
+    color: #0e0d0d;
+    font-family: 'Comic Neue', cursive;
+}
+
+.about-text p strong {
+    font-weight: 600;
+    color: #000;
+}
+
+/* Gambar */
+.about-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Tombol Navigasi */
+.navigation-buttons {
+    text-align: center;
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.nav-button {
+    font-family: 'Inter', sans-serif;
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin: 10px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #74af68, #121312); /* Gradasi hijau aesthetic */
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background: linear-gradient(135deg, #070707, #213f1a); /* Gradasi berlawanan */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 1440px) {
+  .about-content {
+      flex-direction: column;
+      gap: 30px;
+  }
+
+  .about-text {
+      padding: 0 20px;
+  }
+
+  .about-text h1,
+  .about-text h2 {
+      font-size: 3.2rem; /* Ukuran lebih kecil untuk judul */
+      text-align: center;
+  }
+
+  .about-text p {
+      font-size: 1.8rem;
+      text-align: justify; /* Perataan teks lebih baik di layar kecil */
+  }
+
+  .about-image {
+      width: 100%;
+      margin-top: 30px;
+  }
+
+  .navigation-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .nav-button {
+      font-size: 2.2rem;
+      margin: 15px 25px;
+      padding: 15px 30px;
+  }
+}
+
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-text {
+        padding: 0 20px;
+    }
+
+    .about-text h1,
+    .about-text h2 {
+        font-size: 3rem; /* Ukuran lebih kecil untuk judul */
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 1.6rem;
+        text-align: justify; /* Perataan teks lebih baik di layar kecil */
+    }
+
+    .about-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .navigation-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-button {
+        font-size: 2rem;
+        margin: 10px 20px;
+        padding: 10px 25px;
+    }
+}
+
+/* Responsif untuk layar kecil (lebih kecil dari 480px) */
+@media (max-width: 480px) {
+    .about-text h1,
+    .about-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-text p {
+        font-size: 1.4rem;
+    }
+
+    .nav-button {
+        font-size: 1.8rem;
+        padding: 10px 20px;
+    }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                      responsive about
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ===================================================================================================================================================================
+
+                                                 MEDIA.JSX
+
+=================================================================================================================================================================== */
+/* Container for Media page */
+.media-container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+  background-image: url('https://i.pinimg.com/736x/c4/3f/21/c43f2134c3607e78eaf2a6b605cf4289.jpg'); /* Link gambar latar belakang */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Section */
+.media-header {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparan untuk kontras */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.media-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+.media-header h4 {
+  font-size: 100px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+.media-header p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.email-link {
+  color: #16A085;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Main content area */
+.media-body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Row layout for section */
+.media-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;  /* Flex akan wrap untuk layar kecil */
+}
+
+/* Each section container */
+.media-section {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparan untuk teks */
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 45%; /* Membuat dua kolom */
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-section h2 {
+  font-size: 32px;
+  color: #16A085;  /* Warna hijau pastel */
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.media-section p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.media-link {
+  color: #27AE60;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.media-link:hover {
+  color: #16A085;
+}
+
+/* Efek Hover untuk setiap section */
+.media-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-about {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-link {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #16A085;
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .media-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .media-section {
+    min-width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------- */
+/* Tombol "Back to About Us" */
+.back-to-about {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.back-link {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5e6463;  /* Warna hijau pastel */
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-link:hover {
+  color: #fff;
+  background-color: #414242;  /* Warna hijau lebih terang saat hover */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.back-link:before {
+  content: '←';  /* Menambahkan ikon panah kiri */
+  margin-right: 10px;
+  font-size: 28px;
+  vertical-align: middle;
+}
+
+.back-link:hover:before {
+  color: #fff;  /* Ubah warna ikon saat hover */
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                  responsive media
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ===================================================================================================================================================================
+
+                                                 REVIEWS
+
+=================================================================================================================================================================== */
+
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ddf0d6;
+}
+
+/* Review Container */
+.review-container {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* Title */
+.review-title {
+  font-size: 5.5rem;
+  text-align: center;
+  color: #577262;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  font-family: 'Playfair Display', serif; /* Font klasik untuk judul */
+  font-weight: 700; /* Bold font */
+  text-transform: uppercase; /* Membuat huruf kapital semua untuk kesan kuat */
+  letter-spacing: 2px; /* Memberikan jarak antar huruf agar lebih terkesan luas */
+  transition: transform 0.3s ease, color 0.3s ease; /* Menambahkan transisi halus */
+}
+
+.review-title:hover {
+  transform: scale(1.1); /* Efek zoom in pada saat hover */
+  color: #2d3831; /* Mengubah warna ke hijau saat hover */
+}
+
+/* Customer Satisfaction Section */
+.customer-satisfaction {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.customer-satisfaction h2 {
+  font-size: 28px;
+  color: #16a085;
+  margin-bottom: 10px;
+}
+
+.customer-satisfaction h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.customer-satisfaction p {
+  font-size: 20px;
+  color: #666;
+}
+
+/* Rating Stats */
+.rating-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.rating {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.rating h4 {
+  font-size: 22px;
+  color: #16a085;
+}
+
+.rating p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Rating Breakdown */
+.rating-breakdown {
+  margin-bottom: 40px;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-item {
+  text-align: center;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.rating-item h3 {
+  font-size: 22px;
+  color: #16a085;
+}
+
+.rating-item p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+  margin-bottom: 40px;
+}
+
+.review-item {
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.review-item p {
+  font-size: 18px;
+  color: #ece9e9;
+}
+
+.review-item strong {
+  font-size: 20px;
+  color: #16a085;
+}
+
+/* Back to About Us Button */
+.back-to-about {
+  text-align: center;
+}
+
+.back-button {
+  background: #16a085;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #1abc9c;
+}
+/* ================= BACK */
+.back-to-about {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.back-link {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5e6463; /* Warna hijau pastel */
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-link:hover {
+  color: #fff;
+  background-color: #414242; /* Warna hijau lebih terang saat hover */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.back-link:before {
+  content: '←'; /* Menambahkan ikon panah kiri */
+  margin-right: 10px;
+  font-size: 28px;
+  vertical-align: middle;
+}
+
+.back-link:hover:before {
+  color: #fff; /* Ubah warna ikon saat hover */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+  .back-link {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .back-link:before {
+    font-size: 24px;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                    responsive review
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ---------------------------------- BINTANG ---------------------------------------------------------------------------------------------------------------------- */
+/* Styling untuk container utama */
+.review-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Judul */
+.review-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+.review-title:hover {
+  color: #27ae60;
+}
+
+/* Customer satisfaction container */
+.customer-satisfaction {
+  margin-bottom: 30px;
+}
+
+/* Ratings container */
+.ratings-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.rating-box {
+  flex: 1;
+  min-width: 250px;
+  max-width: 30%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #e8f5e9, #f9f9f9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.rating-box:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(to bottom, #ffffff, #c8e6c9);
+}
+
+/* Rating box headings */
+.rating-box h4 {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+/* Bintang-bintang */
+.stars {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #ffc107;
+}
+
+/* Link back button */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #27ae60;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #1e8449;
+  transform: scale(1.05);
+}
+
+/* Gaya untuk foto profil pada ulasan */
+.review-profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+/* Container untuk header review */
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.review-form {
+  margin-top: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, #f0f4ff, #d9e9ff);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-form h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+  border-color: #75b891;
+  outline: none;
+  box-shadow: 0 0 8px rgba(136, 223, 158, 0.2);
+}
+
+.review-form textarea {
+  resize: vertical;
+  min-height: 120px;
+  margin-right: 30px;
+}
+
+.review-form button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #75b195, #348868);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-right: 30px;
+}
+
+.review-form button:hover {
+  background: linear-gradient(135deg, #4f8a57, #363d34);
+  transform: translateY(-2px);
+}
+
+.review-form button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .review-form {
+    padding: 20px;
+  }
+
+  .review-form h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===================================================================================================================================================================
+
+                                                 AWARDS
+=================================================================================================================================================================== */
+/* Styling for Awards Page */
+h1 {
+  font-size: 5.5rem;
+  text-align: center;
+  color: #577262;
+  margin-bottom: 30px;
+  line-height: 1.4;
+
+  font-family: 'Playfair Display', serif; /* Font klasik untuk judul */
+  font-weight: 700; /* Bold font */
+  text-transform: uppercase; /* Membuat huruf kapital semua untuk kesan kuat */
+  letter-spacing: 2px; /* Memberikan jarak antar huruf agar lebih terkesan luas */
+  transition: transform 0.3s ease, color 0.3s ease; /* Menambahkan transisi halus */
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: 800;
+  color: #0a0a0a;
+  text-align: center;
+  margin-bottom: 30px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Container for Award Images */
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.award-item {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.award-item p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 10px;
+  color: #faf7f7;
+}
+
+.award-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Back to About Us Button */
+.back-to-about {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.back-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #526d68;  /* Warna hijau pastel */
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-link:hover {
+  color: #fff;
+  background-color: #414242;  /* Warna hijau lebih terang saat hover */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                    responsive awards
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ===================================================================================================================================================================
+
+                                                 SUSTAINABILITY
+
+=================================================================================================================================================================== */
+
+/* Styling for the Sustainability page */
+.sustainability-container {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 40px;
+  color: #0b0c0c;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 30px;
+  line-height: 1.6;
+  color: #364237;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Comic Neue', cursive;
+
+}
+
+/* Layout for Sustainability Sections */
+.sustainability-section {
+  margin-bottom: 60px;
+}
+
+.sustainability-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sustainability-image {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.sustainability-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sustainability-text {
+  flex: 2;
+  max-width: 700px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.sustainability-text p {
+  margin-bottom: 20px;
+}
+
+/* Back to About Us Button */
+.back-to-about {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.back-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5e6463;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-link:hover {
+  color: #fff;
+  background-color: #414242;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .sustainability-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sustainability-text {
+    margin-top: 20px;
+  }
+
+  .sustainability-image img {
+    width: 80%;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                  responsive sustainability
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ===================================================================================================================================================================
+
+                                                 HELP
+=================================================================================================================================================================== */
+/* FAQ List */
+/* General Styling */
+.support-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.support-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #88d1a9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.support-text {
+  max-width: 60%;
+}
+
+.support-text h2 {
+  font-size: 50px;
+  color: #e62c45;
+  margin-bottom: 10px;
+}
+
+.support-text p {
+  font-size: 30px;
+  color: #555;
+}
+
+.support-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Hover effect untuk tombol WhatsApp */
+.chat-btn {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #74af68, #121312); /* Gradasi hijau aesthetic */
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.chat-btn:hover {
+  background-color: #1b3a1a; /* Warna hijau lebih gelap saat hover */
+  transform: translateY(-3px); /* Efek angkat sedikit saat hover */
+}
+
+/* Hover effect untuk tombol Instagram */
+.contact-btn {
+  padding: 12px 25px;
+  background-color: #E1306C; /* Warna khas Instagram */
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #102016; /* Warna lebih gelap saat hover */
+  transform: translateY(-3px); /* Efek angkat sedikit saat hover */
+}
+
+
+ */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* General Styling */
+.help-center-container {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  max-width: 1900px; /* Lebih proporsional */
+  margin: 0 auto;
+  color: #295034;
+  background-color: #e7f3ea; /* Warna latar belakang yang lembut */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.help-center-title {
+  font-size: 68px; /* Ukuran besar */
+  font-weight: bold;
+  color: #2e4b35;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.help-center-description {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #436859;
+  line-height: 1.6; /* Keterbacaan lebih baik */
+}
+
+/* FAQ Section */
+.faq-container {
+  margin-bottom: 50px;
+}
+
+.faq-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #182c1e;
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsif */
+  gap: 20px; /* Jarak antar elemen */
+  padding: 0;
+  list-style: none;
+}
+
+.faq-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #216606;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%; /* Tinggi konsisten */
+}
+
+.faq-link:hover {
+  background-color: #3f4e39;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek hover */
+}
+
+/* Support Section */
+.support-container {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.support-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.support-description {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.support-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact-btn,
+.chat-btn {
+  background-color: #508860;
+  color: white;
+  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                          responsive help
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ===================================================================================================================================================================
+
+                                                 CONTACT US
+
+=================================================================================================================================================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-us-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-us-container p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  color: #1faa2b;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contact-us-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 56px;
+  color: #1faa2b;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  padding: 30px;
+  font-size: 26px;
+  border: 1px solid #0f0f0f;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 32px 40px;
+  background-color: #416639; /* Greenish color */
+  color: white;
+  font-size: 38px;
+  border: none;
+  border-radius: 19px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #142414; /* Darker shade on hover */
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                              responsive contactUs
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ===================================================================================================================================================================
+
+                                                 HOME
+
+=================================================================================================================================================================== */
+/* General Home Styles */
+.home-container {
+  font-family: Arial, sans-serif;
+  animation: fadeIn 1.5s ease-in-out; /* Efek transisi saat halaman dimuat */
+  background-color: rgba(175, 173, 173, 0.8);}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('https://i.pinimg.com/736x/bf/42/db/bf42dbe7f48b3b362d47f99cdeea76d9.jpg');
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+}
+
+.hero-section .hero-content h1 {
+  font-size: 6rem;
+  color: #101110;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-section .hero-content h1:hover {
+  transform: scale(1.05);
+  color: #546d56;
+}
+
+.hero-section .hero-content p {
+  font-size: 3.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.hero-section .hero-content p:hover {
+  color: #4CAF50;
+}
+
+.shop-now-btn {
+  background-color: #2b572d;
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #61c265;
+  transform: scale(1.1);
+}
+
+/* Featured Categories */
+.featured-categories {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.featured-categories .category-item {
+  display: inline-block;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-categories .category-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.featured-categories .category-item img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.featured-categories .category-item img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.featured-categories .category-item h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.featured-categories .category-item h3:hover {
+  color: #4CAF50;
+}
+
+/* Promotions Section */
+.promotions-section {
+  background-color: #cbebcb;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.promotion-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: large;
+}
+
+.promotion-item {
+  max-width: 850px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promotion-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.promotion-item svg {
+  width: 160px;
+  height: 160px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.promotion-item svg:hover {
+  transform: scale(1.2);
+  color: #2b572d;
+}
+
+.promotion-item h3 {
+  font-size: 3.5rem;
+  color: #000;
+}
+
+.promotion-item p {
+  font-size: 2rem;
+  color: #000;
+}
+
+/* Featured Products */
+.featured-products {
+  padding: 50px 0;
+}
+
+/* ------------------------------------T A M B A H A N --------------------------------------------------------------------------------------------------------------------- */
+/* Freshly Picked - New Flowers Section */
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-item img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.product-item h3 {
+  font-size: 2.8rem;
+  color: #000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.product-item p {
+  font-size: 2.2rem;
+  color: #4CAF50;
+}
+
+.view-product-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.view-product-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.add-to-cart-btn {
+  background-color: #ff8c42;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #ff7033;
+  transform: scale(1.1);
+}
+
+.like-btn {
+  background-color: #ff4d6d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.like-btn:hover {
+  background-color: #e63950;
+  transform: scale(1.1);
+} */
+
+.new-flowers-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-flowers-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.new-flowers-image {
+  flex: 1;
+  max-width: 1300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.new-flowers-image:hover {
+  transform: scale(1.03);
+  color: #000;
+}
+
+.new-flowers-text {
+  flex: 2;
+}
+
+.new-flowers-text p {
+  font-size: 2.1rem;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #161616;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Most Popular Flower Subscriptions Section */
+.flower-subscriptions-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flower-subscriptions-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.flower-subscriptions-image {
+  flex: 1;
+  max-width: 1300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.flower-subscriptions-image:hover {
+  transform: scale(1.05);
+}
+
+.flower-subscriptions-text {
+  flex: 2;
+}
+
+.flower-subscriptions-text p {
+  font-size: 2.1rem;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #0c0c0c;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-reviews h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.review-item {
+  display: flex;
+  align-items: center;
+  background-color: #334235;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  max-width: 500px;
+  width: 100%;
+}
+
+.review-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.review-profile {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  border: 2px solid #bae7ae;
+}
+
+.review-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-text {
+  flex-grow: 1;
+}
+
+.review-text p {
+  font-size: 1,3rem;
+  color: #f1eded;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Container untuk Produk */
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+/* Setiap Kartu Produk */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus saat hover */
+  cursor: pointer;
+  position: relative;
+}
+
+/* Gambar Produk */
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+/* Bagian Informasi Produk */
+.product-card .info {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card .info h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-card .info p {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Harga Produk */
+.product-card .info .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e91e63; /* Warna harga yang mencolok */
+  margin-bottom: 15px;
+}
+
+/* Ikon tambahan seperti add to cart, info, dll. */
+.product-card .info .icons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.product-card .info .icons i {
+  font-size: 4.5rem;
+  color: #0f0f0f;
+  transition: color 0.3s ease;
+}
+
+.product-card .info .icons i:hover {
+  color: #e91e63; 
+}
+/* Efek Hover pada Kartu Produk */
+.product-card:hover {
+  transform: translateY(-10px); /* Efek naik saat hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Menambah shadow pada hover */
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                            responsive home
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media (max-width: 1850px) {
+  .hero-section {
+    padding: 40px 0;
+  }
+
+  .hero-section .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-section .hero-content p {
+    font-size: 2.5rem;
+  }
+
+  .shop-now-btn {
+    font-size: 2.5rem;
+  }
+
+  .featured-categories .category-item {
+    margin: 10px,10px;
+    padding-left: auto;
+  padding-right: auto;}
+
+  .new-flowers-content,
+  .flower-subscriptions-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new-flowers-image,
+  .flower-subscriptions-image {
+    max-width: 70%;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-right: 90px;
+  }
+
+  .review-list {
+    flex-direction: column;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+@media (max-width: 1850px) {
+  .hero-section {
+    padding: 90px 0;
+  }
+
+  .hero-section .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-section .hero-content p {
+    font-size: 2.5rem;
+  }
+
+  .shop-now-btn {
+    font-size: 2.5rem;
+  }
+
+  .featured-categories ,
+  .featured-categories-img
+  .category-item {
+    margin: 50px;
+    padding-left: auto;
+  padding-right: auto;}
+
+  .new-flowers-content,
+  .flower-subscriptions-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new-flowers-image,
+  .flower-subscriptions-image {
+    max-width: 70%;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-right: 90px;
+  }
+
+  .review-list {
+    flex-direction: column;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1840px) {
+  .hero-section {
+    padding: 90px 0;
+  }
+
+  .hero-section .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-section .hero-content p {
+    font-size: 2.5rem;
+  }
+
+  .shop-now-btn {
+    font-size: 2.5rem;
+  }
+
+  .featured-categories ,
+  .featured-categories-img
+  .category-item {
+    margin: 70px;
+    padding-left: auto;
+  padding-right: auto;}
+
+  .new-flowers-content,
+  .flower-subscriptions-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new-flowers-image,
+  .flower-subscriptions-image {
+    max-width: 70%;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-right: 90px;
+  }
+
+  .review-list {
+    flex-direction: column;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1820px) {
+  .hero-section {
+    padding: 90px 0;
+  }
+
+  .hero-section .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-section .hero-content p {
+    font-size: 2.5rem;
+  }
+
+  .shop-now-btn {
+    font-size: 2.5rem;
+  }
+
+  .featured-categories ,
+  .featured-categories-img
+  .category-item {
+    margin: 80px;
+    padding-left: auto;
+  padding-right: auto;}
+
+  .new-flowers-content,
+  .flower-subscriptions-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new-flowers-image,
+  .flower-subscriptions-image {
+    max-width: 70%;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-right: 90px;
+  }
+
+  .review-list {
+    flex-direction: column;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1810px) {
+  .hero-section {
+    padding: 90px 0;
+  }
+
+  .hero-section .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-section .hero-content p {
+    font-size: 2.5rem;
+  }
+
+  .shop-now-btn {
+    font-size: 2.5rem;
+  }
+
+  .featured-categories ,
+  .featured-categories-img
+  .category-item {
+    margin: 90px;
+    padding-left: auto;
+  padding-right: auto;}
+
+  .new-flowers-content,
+  .flower-subscriptions-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new-flowers-image,
+  .flower-subscriptions-image {
+    max-width: 70%;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-right: 90px;
+  }
+
+  .review-list {
+    flex-direction: column;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1810px) {
+  .hero-section {
+    padding: 90px 0;
+  }
+
+  .hero-section .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .featured-categories ,
+  .featured-categories-img
+  .category-item {
+    margin: 110px;
+    padding-left: auto;
+    padding-right: 30px;}
+
+  .new-flowers-content,
+  .flower-subscriptions-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 1800px) {
+  .hero-section {
+    padding: 90px 0;
+  }
+
+  .hero-section .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .featured-categories ,
+  .featured-categories-img
+  .category-item {
+    margin: 130px;
+    padding-left: auto;
+  padding-right: 20px;}
+
+  .new-flowers-content,
+  .flower-subscriptions-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+
+
+@media (max-width: 1125px) {
+  .hero-section {
+    padding: 90px 0;
+  }
+
+  .hero-section .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .featured-categories ,
+  .featured-categories-img
+  .category-item {
+    max-width: 0%;
+    max-width: 80%;
+    margin: 220px;
+    margin-left: 60px;
+    padding-left: auto;
+  padding-right: 110px;
+}
+
+  .new-flowers-content,
+  .flower-subscriptions-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 650px) {
+  .hero-section {
+    padding: 40px 0;
+  }
+  .hero-section .hero-content h1 {
+    font-size: 2.6rem;
+  }
+  .hero-section .hero-content p {
+    font-size: 1.4rem;
+  }
+
+  .shop-now-btn {
+    font-size: 1.4rem;
+  }
+
+  .featured-categories .category-item {
+    margin: 0px;
+    margin-right: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    align-items: center;
+  }
+
+  .new-flowers-content,
+  .flower-subscriptions-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .new-flowers-image,
+  .flower-subscriptions-image {
+  } */
+
+  .review-list {
+    flex-direction: column;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 30px 0;
+  }
+
+  .hero-section .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-section .hero-content p {
+    font-size: 1.8rem;
+  }
+
+  .shop-now-btn {
+    font-size: 2rem;
+  }
+
+  .featured-categories .category-item {
+    margin: 10px;
+  }
+
+  .new-flowers-content,
+  .flower-subscriptions-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new-flowers-image,
+  .flower-subscriptions-image {
+    max-width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .review-list {
+    flex-direction: column;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 100px;
+    width: 60%;
+  }
+}
+
+/* ===================================================================================================================================================================
+
+                                                 LETTERBOXFLOWERS
+
+=================================================================================================================================================================== */
+/* Styling untuk banner-section */
+.banner-section {
+  display: flex;
+  flex-direction: row; /* Default untuk layar kecil */
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  gap: 15px;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1200px; /* Membatasi lebar maksimum */
+}
+
+@media (min-width: 1310px) {
+  .banner-section {
+    /* flex-direction: row; Susun secara horizontal */
+    text-align: left;
+    gap: 20px;
+  }
+
+  .banner-text {
+    padding: 0 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 3rem; /* Ukuran teks lebih besar */
+  }
+
+  .banner-text p {
+    font-size: 1.4rem; /* Ukuran teks deskripsi lebih besar */
+  }
+}
+@media (min-width: 1275px) {
+  .banner-section {
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .banner-text {
+    padding: 0 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem; /* Ukuran teks lebih besar */
+  }
+
+  .banner-text p {
+    font-size: 1.4rem; /* Ukuran teks deskripsi lebih besar */
+  }
+}
+
+@media (min-width: 1250px) {
+  .banner-section {
+    /* flex-direction: row; Susun secara horizontal */
+    text-align: left;
+    gap: 20px;
+  }
+
+  .banner-text {
+    padding: 0 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem; /* Ukuran teks lebih besar */
+  }
+
+  .banner-text p {
+    font-size: 1.4rem; /* Ukuran teks deskripsi lebih besar */
+  }
+}
+
+@media (min-width: 1229px) {
+  .banner-section {
+    /* flex-direction: row; Susun secara horizontal */
+    text-align: center;
+    gap: 20px;
+  }
+
+  .banner-text {
+    padding: 0 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 3rem; /* Ukuran teks lebih besar */
+  }
+
+  .banner-text p {
+    font-size: 1.4rem; /* Ukuran teks deskripsi lebih besar */
+  }
+}
+
+
+/* Responsif untuk ukuran layar sedang */
+@media (min-width: 768px) {
+  .banner-section {
+    flex-direction: column; /* Susun secara horizontal */
+    text-align: left;
+    gap: 20px;
+  }
+
+  .banner-text {
+    padding: 0 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 3rem; /* Ukuran teks lebih besar */
+  }
+
+  .banner-text p {
+    font-size: 1.4rem; /* Ukuran teks deskripsi lebih besar */
+  }
+}
+
+/* Responsif untuk ukuran layar besar */
+@media (min-width: 1024px) {
+  .banner-text h1 {
+    font-size: 3.5rem; /* Teks lebih menonjol */
+  }
+
+  .banner-text p {
+    font-size: 1.6rem; /* Teks deskripsi lebih jelas */
+  }
+}
+
+
+
+/* ===================================================================================================================================================================
+
+                                                LOGIN
+
+=================================================================================================================================================================== */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-image: url('https://i.pinimg.com/736x/b6/9f/e0/b69fe076894168d9add81c431df514d7.jpg');
+  background-size: cover; /* Pastikan gambar menutupi seluruh kontainer */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Agar gambar tidak diulang */
+  margin: 0; /* Menghapus margin default */
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 600px;
+  background-color: rgba(115, 139, 122, 0.8); /* Background transparan dengan warna abu-abu muda */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan shadow untuk memberikan efek mengapung */
+}
+
+.login-container input {
+  padding: 10px;
+  font-size: 36px; /* Ukuran font lebih kecil */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none; /* Menghilangkan outline saat input terpilih */
+}
+
+.login-container input::placeholder {
+  color: #bbb; /* Warna placeholder lebih terang */
+}
+
+.login-container button {
+  padding: 10px;
+  background-color: #97e79b;
+  color: white;
+  font-size: 36px; /* Ukuran font lebih kecil */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.login-container button:hover {
+  background-color: #3c4441; /* Efek hover dengan warna gelap */
+}
+
+/* Styling untuk link atau tombol lainnya (optional) */
+.login-container p {
+  font-size: 34px;
+  color: #ccc;
+}
+
+.login-container p a {
+  color: #97e79b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-container p a:hover {
+  text-decoration: underline;
+}
+
+/* ===================================================================================================
+                                        Responsive Design
+==================================================================================================== */
+
+/* Menyesuaikan tampilan untuk layar kecil (mobile) */
+@media (max-width: 600px) {
+  .login-container form {
+    width: 90%; /* Membuat form lebih lebar pada layar kecil */
+  }
+
+  .login-container input {
+    font-size: 14px; /* Ukuran font lebih kecil */
+  }
+
+  .login-container button {
+    font-size: 14px; /* Ukuran font lebih kecil */
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                  responsive login
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* ===================================================================================================================================================================
+
+                                                 TRACK YOUR ORDER
+
+=================================================================================================================================================================== */
+
+.track-order-page {
+  background-color: rgba(178, 230, 185, 0.5); /* 0.5 for 50% transparency */
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners for the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the content */
+}
+
+
+/* Halaman Utama TrackOrder */
+.track-order-page {
+  text-align: center;
+  margin: 50px;
+  font-family: 'Arial', sans-serif;
+}
+
+.track-order-page input {
+  padding: 15px 20px;
+  margin: 20px 0;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.track-order-page input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+/* Styling Tombol dengan Gradasi dan Efek Hover */
+.track-order-page button {
+  padding: 15px 30px;
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.track-order-page button:hover {
+  background: linear-gradient(90deg, #65be78, #313631);
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.track-order-page button:active {
+  transform: scale(1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Pesan Error */
+.track-order-page .error {
+  color: #ff5252;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Status Pesanan */
+
+/* Informasi Kerjasama */
+.partnership-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.partnership-info p {
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.pos-logo {
+  width: 700px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pos-logo:hover {
+  transform: scale(0.9);
+}
+/* ========================================================  HISTORY  ================================================================================================= */
+/* History container */
+.history-container {
+  padding: 20px;
+  background: linear-gradient(45deg, rgba(125, 167, 136, 0.8), rgba(248, 252, 249, 0.3)); /* Gradasi transparan */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+/* Heading styles */
+.history-container h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #0c0b0b;
+}
+
+.history-container h3 {
+  font-size: 2rem;
+  color: #111010;
+  margin-bottom: 15px;
+}
+
+/* Form edit styles */
+.history-container .form-group {
+  margin-bottom: 15px;
+}
+
+/* .history-container .form-group label {
+  font-size: 1rem;
+  color: #0c0c0c;
+} */
+
+/* .history-container .form-group input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: rem;
+  color: #c53434;
+} */
+
+.history-container .form-group input:focus {
+  border-color: #83c7ad;
+  outline: none;
+}
+
+.history-container button {
+  background-color: #39c47c;
+  color: rgb(29, 27, 27);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.history-container button:hover {
+  background-color: #50ca91;
+}
+
+/* Button group for editing and canceling */
+.history-container button + button {
+  margin-left: 10px;
+  background-color: #ccc;
+}
+
+.history-container button + button:hover {
+  background-color: #0f0e0e;
+}
+
+/* Product list styling */
+.history-container .shipping-info,
+.history-container .form-group input {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.history-container .shipping-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.history-container .shipping-info {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Show product information */
+.history-container h3 + div {
+  margin-top: 20px;
+}
+
+.history-container .shipping-info,
+.history-container .shipping-info p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* No transaction message */
+.history-container p {
+  color: #050505;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Editing section */
+.history-container .edit-form {
+  display: none;
+}
+
+.history-container .edit-form.show {
+  display: block;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                            responsive trectYourOrder
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* ===================================================================================================================================================================
+
+                                                 flowers
+
+=================================================================================================================================================================== */
+
+/* Subscriptions Page Styles */
+
+/* Overall page layout */
+.page-content {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Banner section */
+.banner-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; */
+  border-radius: 8px;
+  /* filter: brightness(0.7); */
+}
+
+.banner-text {
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+}
+
+/* Products grid layout */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%; 
+   height: 500px; 
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.product-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-size: 1.5rem;
+  color: #101310;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  color: #141212;
+  font-size: 1.4rem;
+}
+
+.product-card .rating {
+  font-size: 1.6rem;
+  color: #693602;
+  margin-top: 10px;
+}
+
+/* Pagination Controls */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #f8f8f8;
+}
+
+.pagination .active {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border-color: #28a745;
+}
+
+.pagination button:focus {
+  outline: none;
+}
+
+/* Back Home Button */
+.back-home {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-home-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.back-home-button:hover {
+  background-color: #0056b3;
+}
+
+.back-home-button svg {
+  margin-right: 8px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+
+  .pagination button {
+    padding: 8px 12px;
+  }
+
+  .back-home-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                      responsive flowers
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ===================================================================================================================================================================
+
+                                                 HAMPERS
+
+=================================================================================================================================================================== */
+
+
+/* Styling untuk Banner Section */
+.banner-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+
+/* Banner Image */
+.banner-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banner-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk Container Banner Text */
+.banner-text {
+  background-color: rgba(124, 182, 163, 0.8); /* Background putih dengan transparansi */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 70px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.banner-text:hover {
+  transform: translateY(-5px);
+  background-color: #c3e6cb; /* Hijau pastel sedikit lebih gelap */
+}
+
+/* Banner Text H1 */
+.banner-text h1 {
+  font-size: 5.5rem;
+  color: #155724; /* Hijau lebih gelap untuk teks */
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.banner-text h1:hover {
+  color: #0c3c15; /* Hijau lebih gelap saat hover */
+}
+
+/* Banner Text P */
+.banner-text p {
+  font-size: 2.2rem;
+  color: #155724;
+  transition: color 0.3s ease;
+}
+
+.banner-text p:hover {
+  color: #0c3c15; /* Hijau lebih gelap saat hover */
+}
+
+/* Keyframes untuk Animasi */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                          responsive hampers
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ===================================================================================================================================================================
+
+                                                 checkout
+=================================================================================================================================================================== */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 2000px;
+  margin: 0 auto;
+  background-image: url('https://i.pinimg.com/736x/c4/3f/21/c43f2134c3607e78eaf2a6b605cf4289.jpg');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  margin-bottom: 250px;
+  max-width: 100%; box-sizing: border-box; padding: 0 15px;
+}
+
+.checkout-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.checkout-form {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .checkout-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 38px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+  /* height: 100%; */
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 28px;
+  background-color: #849c84;
+  color: rgb(20, 19, 19);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #305732;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                    responsive checkout
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ===================================================================================================================================================================
+
+                                                 back
+
+=================================================================================================================================================================== */
+
+.back-home {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.back-home-button {
+  background: linear-gradient(135deg, #74af68, #121312); /* Gradasi hijau aesthetic */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none; /* Ensure it's styled as a button, even though it's a link */
+}
+
+.back-home-button:hover {
+  background-color: #69e989;
+}
+
+.back-home-button svg {
+  margin-right: 5px; /* Space between the icon and text */
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                                    responsive back
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* ===================================================================================================================================================================
+
+                                                 registter
+=================================================================================================================================================================== */
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-image: url('https://i.pinimg.com/736x/f1/9b/bc/f19bbcb7199b4530ceaa6721bc1ce2c6.jpg');
+  background-size: 280vh; /* Untuk memastikan gambar menutupi seluruh kontainer */
+  background-position: center; /* Untuk memusatkan gambar */
+  background-repeat: no-repeat; /* Agar gambar tidak diulang */
+  margin: 0; /* Menghapus margin default */
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8); /* Memberikan latar belakang putih transparan */
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.register-container input {
+  padding: 10px;
+  font-size: 38px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.register-container button {
+  padding: 12px;
+  background-color: #699b7c;
+  color: white;
+  font-size: 38px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.register-container button:hover {
+  background-color: #567d59; /* Warna ketika hover */
+}
+
+/* Responsiveness untuk tampilan mobile */
+@media (max-width: 768px) {
+  .register-container form {
+    width: 90%; /* Lebar form disesuaikan dengan ukuran layar */
+  }
+
+  .register-container input,
+  .register-container button {
+    font-size: 16px; /* Menyesuaikan ukuran font untuk layar lebih kecil */
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                          responsive history
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* Styling untuk kartu produk */
+/* ==================================================================================================================================================================================
+
+                                       product
+
+========================================================================================================================================================================================= */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                        responsive product
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* Container for the products */
+.product-container {
+  padding: 50px;
+  background-color: #7a8d77;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 12px 14px;
+  margin-right: 10px;
+  font-size: 24px;
+  border: 1px solid #080808;
+  border-radius: 5px;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.sort-container select {
+  padding: 8px;
+  font-size: 28px;
+  border: 1px solid #0c0b0b;
+  border-radius: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #161515;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 90%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+h6 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.favorite-btn,
+.buy-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin-top: 10px;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(135deg, #74af68, #121312); /* Gradasi hijau aesthetic */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 40px;
+}
+
+.favorite-btn:hover,
+.buy-btn:hover {
+  background-color: #abf3ae;
+}
+
+.favorite-btn:focus,
+.buy-btn:focus {
+  outline: none;
+}
+
+.product-card {
+  background: linear-gradient(135deg, #5e926d, #d6f8d8e8);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: auto;
+  margin: auto;
+  margin-top: auto;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1440px) {
+  .product-header {
+    flex-direction: column;
+    margin-bottom: 130px;
+  }
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-input {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .sort-container select {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .favorite-btn,
+  .buy-btn {
+    font-size: 22px;
+    padding: 8px 14px;
+    margin-left: 24px;
+  }
+
+  h6 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+}
+.product-list {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .product-header {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-input {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .sort-container select {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  .favorite-btn,
+  .buy-btn {
+    font-size: 20px;
+    padding: 6px 10px;
+    margin-left: 20px;
+  }
+
+  h6 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+.product-list {
+  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .favorite-btn,
+  .buy-btn {
+    font-size: 22px;
+    padding: 7px 11px;
+  }
+
+  h6 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+}
+
+/* Desktop responsiveness */
+@media (min-width: 1025px) {
+  .product-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ===================================================================================================================================================================
+
+                                                 DARKMODE
+
+=================================================================================================================================================================== */
+/* Default Light Mode Styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+header {
+  background-color: #f0f0f0;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header.dark-mode {
+  background-color: #333333;
+}
+
+/* Tombol Mode */
+.theme-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                                    css video
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.live-chat-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(240, 240, 240, 0.9));
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1900px; /* Atur ukuran maksimal container */
+}
+
+.live-chat-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.live-chat-container p {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.live-chat-video {
+  width: 100%; /* Sesuaikan lebar dengan container */
+  max-width: 920px; /* Batas maksimal untuk layar besar */
+  aspect-ratio: 16/9; /* Atur rasio landscape */
+  border-radius: 20px; /* Beri efek melengkung pada video */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Beri efek bayangan */
+}
+/* =====================================favorites================================================================================================= */
+.review-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.review-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.customer-satisfaction {
+  margin-bottom: 30px;
+}
+
+.ratings-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rating-box {
+  width: 30%;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.star-rating {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.rating-breakdown {
+  margin-bottom: 30px;
+}
+
+.rating-breakdown .star-rating {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.rating-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.customer-reviews {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.review-profile-pic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.review-header p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.review-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+button {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #e53935;
+}
+
+.review-form {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.review-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.review-form button:hover {
+  background-color: #45a049;
+}
+
+.back-to-about {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
